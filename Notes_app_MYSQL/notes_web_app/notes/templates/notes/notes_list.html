@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="row">
+		<div class="col-md-4">
+			<h1>@{{user.username}}</h1>
+		</div>
+		<div class="col-md-8">
+			{% for note in object_list %}
+				{% if note.user.username == user.username  %}				
+					<div class="note-wrap note-white">
+						<h2>{{note.title}}</h2>
+						<hr>
+						<h5>{{note.text|safe}}</h5>
+						<br>
+						<h5 class="help-block" id='usertag'>Created by: @{{note.user.username}}</h5>
+						<h5 class="help-block" id="usertag">{{note.created}}</h5>
+						<a href="{% url 'notes:update' pk=note.pk %}">
+							<span class="glyphicon glyphicon-pencil" title="Update Note"></span>
+						</a>
+						<a href="{% url 'notes:delete' pk=note.pk %}" class="anchor">
+							<span class="glyphicon glyphicon-remove" title="Delete Note"></span>
+						</a>
+						<a href="{% url 'notes:sharesingle' pk=note.pk %}" class="anchor">
+							<span class="glyphicon glyphicon-share" title="Share Note"></span>
+						</a>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

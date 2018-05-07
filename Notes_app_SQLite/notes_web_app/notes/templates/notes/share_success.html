@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap3 %}
+	<div  class="container">
+		{% for message in messages %}
+			<h1>{{message}}</h1>
+		{% endfor %}
+	</div>
+{% endblock %}
