@@ -19,8 +19,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$',views.Welcome.as_view(),name='homepage'),
-    url(r'^loggedin/$',views.Loggedin.as_view(),name='loggedin'),
-    url(r'^loggedout/$',views.Loggedout.as_view(),name='loggedout'),
     url(r'^success/$',views.SuccessfulRegistration.as_view(),name='success'),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/',include('accounts.urls')),

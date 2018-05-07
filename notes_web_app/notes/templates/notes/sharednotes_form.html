@@ -2,11 +2,11 @@
 {% block content %}
 {% load bootstrap3 %}
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-8">
 			<h1>@{{user.username}}</h1>
 			<h2>Share Note</h2>		
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-4" style="padding-top:20px; padding-bottom:30px; border-left: 1px solid #dedfe0;">
 			<form method="post">
 				{% csrf_token %}
 				<div class="form-group">
@@ -28,7 +28,7 @@
 
 					</select>
 				</div>
-				<input type="radio" name="can_edit" value="True">Can Edit<br>
+				<input type="radio" name="can_edit" value="True">Can Edit<br><br>
 				<input type="submit" value="Create" class="btn btn-warning">
 			</form>
 		</div>

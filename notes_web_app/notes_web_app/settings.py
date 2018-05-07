@@ -33,14 +33,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
+    'notes',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
-    'notes',
     'bootstrap3',
 ]
 
@@ -126,4 +126,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
 
 LOGIN_REDIRECT_URL = 'notes:all'
-LOGOUT_REDIRECT_URL = 'loggedout'
+LOGOUT_REDIRECT_URL = 'accounts:login'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_USE_TLS = True
