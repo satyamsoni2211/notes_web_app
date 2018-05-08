@@ -3,10 +3,10 @@
 {% load bootstrap3 %}
 		<div class="row">
 		<div class="col-md-4">
-			<h1>@{{user.username}}</h1>
+			<h1 id='wh'>Hi @{{user.username|title}}</h1>
 		</div>
 		<div class="col-md-8">
-			<h2>Are you sure you want to delete the below note ?</h2>
+			<h3 id='wh'>Are you sure you want to delete the below note ?</h3>
 			<div class="container note-wrap note-white">
 					<h1>{{notes.title}}</h1>
 					<h3>{{notes.text|safe}}</h3>

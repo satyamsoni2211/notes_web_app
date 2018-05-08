@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-	<h1>Account created sccesfully <span class="glyphicon glyphicon-inbox"></span></h1>
-	<a href="{% url 'login' %}">
-		<span class="glyphicon glyphicon-log-in">Login</span>
-	</a>
+	<h3 id="wh" class="text-center">Account created succesfully <span class="glyphicon glyphicon-inbox"></span></h3>
+	<h4 class="text-center"><a href="{% url 'login' %}" class="text-center btn-dark">Login</a></h4>
 {% endblock %}

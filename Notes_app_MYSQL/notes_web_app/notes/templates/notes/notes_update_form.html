@@ -3,18 +3,18 @@
 {% load bootstrap3 %}
 	<div class="row">
 		<div class="col-md-8">
-			<h1>@{{user.username}}</h1>
-			<h2>Update Note</h2>
+			<h1 id='wh'>Hi @{{user.username|title}}</h1>
 		</div>
 		<div class="col-md-4">
 			<form action="{% url 'notes:create' %}" method="post">
 				{% csrf_token %}
+				<legend id='wh'>Update Note</legend>
 				{% bootstrap_field form.title %}
 				<div class="form-group form">
 					<label for='id_text'>{{ form.text.label }}</label>
 					{{ form.text }}
 				</div>
-				<input type="submit" value="Create" class="btn btn-warning">
+				<input type="submit" value="Update" class="btn btn-warning">
 			</form>
 		</div>
 	</div>

@@ -11,7 +11,6 @@
 				{% if note.user.username == user.username  %}				
 					<div class="note-wrap note-white col-md-3">
 						<h2>{{note.title}}</h2>
-						<hr>
 						<h5>{{note.text|safe}}</h5>
 						<br>
 						<h5 class="help-block" id='usertag'>Created by: @{{note.user.username}}</h5>
