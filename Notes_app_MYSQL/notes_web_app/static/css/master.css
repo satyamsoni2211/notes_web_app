@@ -1,0 +1,30 @@
+.formc{
+  padding-top:10px;
+  border-left: 1px solid #ddd;
+}
+/*body{
+  background-image: url('../images/img1.jpg');
+}*/
+.navcustom{
+  background: inherit;
+}
+.sign{
+  background-color: #d7e3f7;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.high{
+	background-color: #f4ea8d;
+}
+.anchor{
+  border-left: 1px solid #ddd!important;
+}
+#usertag{
+	font-size:12px;
+}
+#wh{
+  color: #ffff;
+}
+@-ms-viewport{
+  width: device-width;
+}
