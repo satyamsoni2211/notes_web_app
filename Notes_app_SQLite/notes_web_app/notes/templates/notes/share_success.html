@@ -3,7 +3,9 @@
 {% load bootstrap3 %}
 	<div  class="container">
 		{% for message in messages %}
-			<h1>{{message}}</h1>
+			<h3 id='wh'>{{message}}</h3>
 		{% endfor %}
+		<br>
+		<h4><a href="{% url 'notes:sharenote' %}" id='wh'>Share another note <i class="fas fa-long-arrow-alt-right"></i></a></h4>
 	</div>
 {% endblock %}

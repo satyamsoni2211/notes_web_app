@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse
 class Notes(models.Model):
     title = models.CharField(max_length=30)
     created = models.DateTimeField(auto_now=True)
-    text = models.TextField(max_length=2000)
+    text = models.CharField(max_length=2000)
     user = models.ForeignKey(User,related_name='notes')
 
     def __str__(self):

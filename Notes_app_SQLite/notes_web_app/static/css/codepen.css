@@ -10,7 +10,7 @@
 }
 
 ::selection {
-  background: #C6FF91;
+  background: #edeeef;
   text-shadow: none;
 }
 
@@ -36,8 +36,9 @@
 .note-wrap {
   width: 235px;
   min-height: 235px;
-  padding: 35px;
-  margin: 0 22px 44px 22px;
+  padding: 10px;
+  margin: 0 10px 15px 20px;
+  margin
   position: relative;
   font-size: 24px;
   vertical-align: top;
@@ -49,7 +50,7 @@
   text-align: center;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
-.note-wrap:before {
+/*.note-wrap:before {
   display: block;
   content: "";
   background: rgba(227, 200, 114, 0.4);
@@ -65,7 +66,7 @@
   -o-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
-}
+}*/
 .note-wrap a {
   color: #494747;
   text-decoration: none;

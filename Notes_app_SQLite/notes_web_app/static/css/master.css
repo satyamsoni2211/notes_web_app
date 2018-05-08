@@ -19,3 +19,12 @@
 .anchor{
   border-left: 1px solid #ddd!important;
 }
+#usertag{
+	font-size:12px;
+}
+#wh{
+  color: #ffff;
+}
+@-ms-viewport{
+  width: device-width;
+}

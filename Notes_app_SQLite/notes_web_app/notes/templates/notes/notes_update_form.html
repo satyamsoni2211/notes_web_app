@@ -7,10 +7,14 @@
 			<h2>Update Note</h2>
 		</div>
 		<div class="col-md-4">
-			<form method="post">
+			<form action="{% url 'notes:create' %}" method="post">
 				{% csrf_token %}
-				{% bootstrap_form form %}
-				<input type="submit" value="Save" class="btn btn-warning">
+				{% bootstrap_field form.title %}
+				<div class="form-group form">
+					<label for='id_text'>{{ form.text.label }}</label>
+					{{ form.text }}
+				</div>
+				<input type="submit" value="Create" class="btn btn-warning">
 			</form>
 		</div>
 	</div>

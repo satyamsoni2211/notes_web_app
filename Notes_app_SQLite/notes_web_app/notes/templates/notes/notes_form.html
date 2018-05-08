@@ -1,16 +1,32 @@
+
 {% extends "base.html" %}
 {% block content %}
 {% load bootstrap3 %}
 	<div class="row">
-		<div class="col-md-8">
-			<h1>@{{user.username}}</h1>
-			<h2>Create Note</h2>		
+		<div class="col-md-7">
+			<h1 id='wh'>Hi @{{user.username|title}}</h1>
+			<br>
+			<h4 class="help-block"><a href="{% url 'notes:all' %}" id='wh'><i class="fas fa-sticky-note" style="font-size:30px;"></i>&nbsp; View All Notes</a></h4>
+			{# <h4 class="btn btn-default">Create Note</h4>		 #}
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-5" style="padding-right:20px">
 			<form action="{% url 'notes:create' %}" method="post">
 				{% csrf_token %}
-				{% bootstrap_form form %}
-				<input type="submit" value="Create" class="btn btn-warning">
+				{% for field in form %}
+				<div class="form-group">
+					<label for="{{field.id_for_label}}">{{field.label}}</label><br>
+					{% if 'text' in field.id_for_label %}
+					<textarea name="{{field.name}}" class="editable medium-editor-textarea  form-horizontal postcontent" maxlength="2000" required id="{{field.id_for_label}}" style="background-color:#ffff;border-radius:3px;border: 1px solid #c1c1c1;" placeholder="Type your text">
+					</textarea>
+					{% else %}
+					<input type="text" name="{{field.name}}" id="{{field.id_for_label}}" class="form-control" required placeholder="{{field.label}}">						
+					{% endif %}
+				</div>
+				{% endfor %}
+				<h5 class="help-block">** Select text in the textbox to add styling</h5>
+				<br>
+				<input type="submit" value="Create Note" class="btn btn-warning">
+				
 			</form>
 		</div>
 	</div>
