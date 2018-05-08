@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap3 %}
+	<div class="row">
+		<div class="col-md-8">
+			<h1>Login to create Notes <span class="glyphicon glyphicon-book"></span></h1>
+		</div>
+		<div class="col-md-4 formc">
+			<form method="post">
+				{% csrf_token %}
+				{% bootstrap_form form%}
+				<input type="submit" value="Login" class="btn btn-toolbar"><span class="glyphicon glyphicon-log-in"></span>
+			</form>
+			<h5><a href="{% url 'accounts:password_reset' %}">Forgot password ?</a></h5>
+		</div>
+	</div>
+
+{% endblock %}

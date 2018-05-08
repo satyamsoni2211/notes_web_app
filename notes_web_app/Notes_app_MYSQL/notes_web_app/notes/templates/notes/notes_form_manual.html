@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap3 %}
+	<div class="row">
+		<div class="col-md-4">
+			<h1>@{{user.username}}</h1>
+			<h2>Create Note</h2>		
+		</div>
+		<div class="col-md-8">
+			<form action="{% url 'notes:create' %}" method="post">
+				{% csrf_token %}
+				{% bootstrap_field form.title %}
+				<div class="form-group form">
+					<label for='id_text'>{{ form.text.label }}</label>
+					{{ form.text }}
+				</div>
+				<input type="submit" value="Create" class="btn btn-warning">
+			</form>
+		</div>
+	</div>
+	<script>
+    	var elements = document.querySelectorAll('.editable'),
+    	editor = new MediumEditor(elements);
+    </script>
+{% endblock %}
+
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap3 %}
+	<div class="row">
+		<div class="col-md-4">
+			<h1>@{{user.username}}</h1>
+			<h2>Create Note</h2>		
+		</div>
+		<div class="col-md-8">
+			<form action="{% url 'notes:create' %}" method="post">
+				{% csrf_token %}
+				{% for field in form %}
+				<div class="form-group">
+					<label for="{{field.id_for_label}}">{{field.label}}</label><br>
+					{% if 'text' in field.id_for_label %}
+					<textarea name="{{field.name}}" class="editable medium-editor-textarea  form-horizontal postcontent" maxlength="2000" required id="{{field.id_for_label}}">
+					</textarea>
+					{% else %}
+					<input type="text" name="{{field.name}}" id="{{field.id_for_label}}" class="form-control" required placeholder="{{field.label}}">						
+					{% endif %}
+				</div>
+				{% endfor %}
+				<input type="submit" value="Create" class="btn btn-warning">
+			</form>
+		</div>
+	</div>
+	<script>
+    	var elements = document.querySelectorAll('.editable'),
+    	editor = new MediumEditor(elements);
+    </script>
+{% endblock %}

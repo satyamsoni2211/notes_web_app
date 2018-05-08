@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="row">
+		<div class="col-md-4">
+			<h1 id='wh'>Hi @{{user.username|title}}</h1>
+			<br>
+			<h4 id='wh'>You have shared <span class="badge">{{shared_notes.all.count}}</span> Notes</h4>
+		</div>
+		<div class="col-md-8">
+			{% for sharednote in object_list %}
+				{% if sharednote.user.username != user.username  %}				
+					<div class="note-wrap note-white">
+						<h2>{{sharednote.note.title}}</h2>
+						<br>
+						<h5>{{sharednote.note.text|safe}}</h5>
+						<br>
+						<h5 class="help-block" id='usertag'>Shared with: @{{sharednote.user.username}}</h5>
+						<h5 class="help-block" id='usertag'>Shared by: @{{sharednote.shared_by}}</h5>
+						<h5 class="help-block" id='usertag'>{{sharednote.shared_on}}</h5>
+						{% if sharednote.can_edit is True %}
+							<a href="{% url 'notes:update' pk=sharednote.note.pk %}">
+								<span class="glyphicon glyphicon-pencil"></span>
+							</a>
+						{% endif %}
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

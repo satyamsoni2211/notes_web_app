@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap3 %}
+	<div class="row" style="height:1000px;">
+		<div class="col-md-8 container-fluid">
+			<h1 id='wh'>Hi @{{user.username|title}}</h1>
+			<br>
+			<h4 class="help-block" id='wh'>You have <span class="badge">{{user.notes.all.count}}</span> notes to Share</h4>
+			<br>
+			<div class="row">
+				{% for note in notes %}
+					<div class="col-md-4 note-wrap note-white" style="padding-left:20px;radius:10px;">
+						<h1>{{note.title|title}}</h1>
+						<h4>{{note.text|truncatechars_html:20|safe}}</h4>
+						<br>
+						<h5 style="bottom:0px">{{note.created}}</h5>
+					</div>
+				{% endfor %}
+			</div>	
+		</div>
+		<div class="col-md-4" style="padding-top:70px; padding-bottom:30px; padding-right:40px;">
+			<form method="post">
+				{% csrf_token %}
+				<legend>Share your notes</legend>
+				<div class="form-group">
+					<label class="control-label" for="id_note">Notes</label>
+					<select name="note" class="form-control" title="" required="" id="id_note">
+						<option value="" selected="">---------</option>
+						{% for note in notes %}
+						<option value="{{note.pk}}">{{note.title}}</option>		
+						{% endfor %}		
+					</select>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="id_user">User</label>
+					<select name="user" class="form-control" title="" required="" id="id_user">
+						<option value="" selected="">---------</option>
+						{% for user in users %}
+						<option value="{{user.username}}">{{user.username}}</option>		
+						{% endfor %}
+
+					</select>
+				</div>
+				<input type="radio" name="can_edit" value="True">Can Edit<br><br>
+				<input type="submit" value="Create" class="btn btn-warning">
+			</form>
+		</div>
+	</div>
+{% endblock %}

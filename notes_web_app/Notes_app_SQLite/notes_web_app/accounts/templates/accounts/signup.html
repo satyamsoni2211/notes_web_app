@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap3 %}
+{% load crispy_forms_tags %}
+	<div class="col-md-7 dv1">
+		<h1>Signup Form</h1>
+	</div>
+	<div class="col-md-5 sign">
+		<form method="post">
+			{% csrf_token %}
+			{% bootstrap_form form %}'
+			{# {% crispy form%} #}
+			<input type="submit" value="Signup" class="btn btn-success">
+		</form>
+	</div>
+{% endblock %}
