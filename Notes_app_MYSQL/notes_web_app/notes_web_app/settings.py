@@ -25,9 +25,9 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'ywolu9irix8&dkz86d(1=z4(0a4l(r6@goh#d)1@ev65w8k(v9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['satyamsoni2211.pythonanywhere.com',]
 
 
 # Application definition
@@ -82,11 +82,14 @@ WSGI_APPLICATION = 'notes_web_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'notesapp',
-        'USER': 'notesapp',
+        'NAME': 'satyamsoni2211$notes_web_app',
+        'USER': 'satyamsoni2211',
         'PASSWORD': 'satyam123',
-        'HOST': 'localhost',
+        'HOST': 'satyamsoni2211.mysql.pythonanywhere-services.com',
         'PORT': '',
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+            }
     }
 }
 

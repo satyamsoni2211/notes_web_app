@@ -14,11 +14,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-            <li><a href="{% url 'notes:create' %}"><strong>Create Notes</strong></a></li>
-            <li><a href="{% url 'notes:sharenote' %}"><strong>Share Notes</strong></a></li>
-            <li><a href="{% url  'notes:sharedwithmenotes' %}"><strong>Shared With Me</strong></a></li>
-            <li><a href="{% url  'notes:sharedbymenotes' %}"><strong>Shared By Me</strong></a></li>
-            <li><a href="{% url 'accounts:logout' %}"><i class="fas fa-user-circle" style="font-size:20px"></i></a></li>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'notes:create' %}"><strong>Create Notes</strong></a></li>
+          <li><a href="{% url 'notes:sharenote' %}"><strong>Share Notes</strong></a></li>
+          <li><a href="{% url  'notes:sharedwithmenotes' %}"><strong>Shared With Me</strong></a></li>
+          <li><a href="{% url  'notes:sharedbymenotes' %}"><strong>Shared By Me</strong></a></li>
+          <li><a href="{% url 'accounts:logout' %}"><i class="fas fa-user-circle" style="font-size:20px"></i>
+          </a></li>
+          {% endif %}
       </ul>      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -25,3 +25,6 @@
 #wh{
   color: #ffff;
 }
+@-ms-viewport{
+  width: device-width;
+}

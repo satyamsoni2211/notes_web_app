@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	{% load static %}
 		<!-- Latest compiled and minified CSS -->
@@ -8,7 +9,7 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
+
 	{# custom stylesheet #}
 	<link href="{% static "css/codepen.css" %}" media="screen" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="{% static "css/master.css" %}">
@@ -21,15 +22,15 @@
 </head>
 <body style="background-image:url({% static "images/login.jpg" %})">
 	{# <img src="{% static "images/notes.jpg" %}" style="z-index:-1;"> #}
-	
+
 	{% include "_navbar.html" %}
 
 	<div class="container-fluid">
 	{% block content %}
-			
+
 		{% endblock %}
 	</div>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	    <script>
