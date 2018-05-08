@@ -7,9 +7,9 @@
 		</div>
 		<div class="col-md-8">
 			<h2>Are you sure you want to delete the below note ?</h2>
-			<div class="container high" style="background-color: #f9f3b8;">
+			<div class="container note-wrap note-white">
 					<h1>{{notes.title}}</h1>
-					<h3>{{notes.text}}</h3>
+					<h3>{{notes.text|safe}}</h3>
 					<h5>Created by: @{{notes.user.username}}</h5>
 					<h5>{{notes.created}}</h5>
 			</div>

@@ -6,7 +6,7 @@ app_name = 'accounts'
 
 urlpatterns = [
     url('^signup/$',views.SignUp.as_view(),name='signup'),
-    url(r'^login/$',authviews.LoginView.as_view(template_name='accounts/login.html'),name='login'),
+    url(r'^login/$',authviews.LoginView.as_view(template_name='accounts/login_temp.html'),name='login'),
     url(r'^logout/$',authviews.LogoutView.as_view(),name='logout'),
     url(r'^password_reset/$', authviews.password_reset, name='password_reset'),
     url(r'^password_reset/done/$', authviews.password_reset_done, name='password_reset_done'),

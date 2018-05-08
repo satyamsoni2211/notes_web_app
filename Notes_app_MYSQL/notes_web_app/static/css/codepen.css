@@ -10,7 +10,7 @@
 }
 
 ::selection {
-  background: #C6FF91;
+  background: #edeeef;
   text-shadow: none;
 }
 
@@ -50,7 +50,7 @@
   text-align: center;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
-.note-wrap:before {
+/*.note-wrap:before {
   display: block;
   content: "";
   background: rgba(227, 200, 114, 0.4);
@@ -66,7 +66,7 @@
   -o-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
-}
+}*/
 .note-wrap a {
   color: #494747;
   text-decoration: none;

@@ -87,9 +87,9 @@ def sharenotes(request): #To choose among available notes
             share = SharedNotes(note=Notes.objects.get(pk=pk), user=User.objects.get(username__iexact=username),
                                 can_edit=edit, shared_by=request.user.username)
             share.save()
-            messages.success(request,'Note shared successfully')
+            messages.success(request,'Note shared successfully with {}'.format(username))
         except IntegrityError as e:
-            messages.error(request,'You can\'t share post with same user Twice')
+            messages.error(request,'You have already shared this Note with {}'.format(username))
         return render(request,'notes/share_success.html')
     return render(request,'notes/sharednotes_form.html',{'notes':notes,
                                                          'users':User.objects.exclude(username__iexact=request.user.username)})
