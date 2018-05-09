@@ -2,13 +2,13 @@
 {% block content %}
 {% load bootstrap3 %}
 	<div class="row">
-		<div class="col-md-4">
-			<h1>@{{user.username}}</h1>
-			<h2>Share Note</h2>		
-		</div>
 		<div class="col-md-8">
+			<h1 id='wh'>Hi @{{user.username|title}}</h1>	
+		</div>
+		<div class="col-md-4">
 			<form method="post">
 				{% csrf_token %}
+				<legend id='wh'><h2>Share Note</h2></legend>
 				<div class="form-group">
 					<label class="control-label" for="id_note">Notes</label>
 					<select name="note" class="form-control" title="" required="" id="id_note">

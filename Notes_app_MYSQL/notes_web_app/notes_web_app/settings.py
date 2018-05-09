@@ -137,12 +137,12 @@ STATICFILES_DIRS = [STATIC_DIR,]
 LOGIN_REDIRECT_URL = 'notes:all'
 LOGOUT_REDIRECT_URL = 'accounts:login'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = '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'
+EMAIL_HOST_USER = 'testvs2211@gmail.com'
+EMAIL_HOST_PASSWORD = 'Satyam.7697066634#'
 EMAIL_USE_TLS = True
 
 BOOTSTRAP3 = {
