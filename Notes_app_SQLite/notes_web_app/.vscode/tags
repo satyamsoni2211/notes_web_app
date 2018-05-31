@@ -1,0 +1,324 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	../accounts/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../notes/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_auto_20180507_0446.py	../notes/migrations/0002_auto_20180507_0446.py	1;"	kind:file	line:1
+0003_auto_20180507_0522.py	../notes/migrations/0003_auto_20180507_0522.py	1;"	kind:file	line:1
+0004_auto_20180507_1034.py	../notes/migrations/0004_auto_20180507_1034.py	1;"	kind:file	line:1
+0005_auto_20180507_1936.py	../notes/migrations/0005_auto_20180507_1936.py	1;"	kind:file	line:1
+0006_auto_20180507_1939.py	../notes/migrations/0006_auto_20180507_1939.py	1;"	kind:file	line:1
+0007_auto_20180507_2000.py	../notes/migrations/0007_auto_20180507_2000.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	../notes_web_app/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:30
+AUTH_PASSWORD_VALIDATORS	../notes_web_app/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:104
+AccountsConfig	../accounts/apps.py	/^class AccountsConfig(AppConfig):$/;"	kind:class	line:4
+AppConfig	../accounts/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	../notes/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+BASE_DIR	../notes_web_app/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+CRISPY_TEMPLATE_PACK	../notes_web_app/settings.py	/^CRISPY_TEMPLATE_PACK = 'bootstrap3'/;"	kind:variable	line:153
+CreateNotes	../notes/views.py	/^class CreateNotes(LoginRequiredMixin,generic.CreateView):$/;"	kind:class	line:18
+DATABASES	../notes_web_app/settings.py	/^DATABASES = {$/;"	kind:variable	line:93
+DEBUG	../notes_web_app/settings.py	/^DEBUG = True$/;"	kind:variable	line:28
+DeleteNotes	../notes/views.py	/^class DeleteNotes(LoginRequiredMixin,generic.DeleteView):$/;"	kind:class	line:32
+EMAIL_BACKEND	../notes_web_app/settings.py	/^EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'$/;"	kind:variable	line:145
+EMAIL_HOST	../notes_web_app/settings.py	/^EMAIL_HOST = 'smtp.gmail.com'$/;"	kind:variable	line:147
+EMAIL_HOST_PASSWORD	../notes_web_app/settings.py	/^EMAIL_HOST_PASSWORD = 'Satyam.7697066634#'$/;"	kind:variable	line:150
+EMAIL_HOST_USER	../notes_web_app/settings.py	/^EMAIL_HOST_USER = 'testvs2211@gmail.com'$/;"	kind:variable	line:149
+EMAIL_PORT	../notes_web_app/settings.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:148
+EMAIL_USE_TLS	../notes_web_app/settings.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:151
+Http404	../notes/views.py	/^from django.http import Http404$/;"	kind:namespace	line:8
+INSTALLED_APPS	../notes_web_app/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:35
+IntegrityError	../notes/views.py	/^from django.db import IntegrityError$/;"	kind:namespace	line:11
+LANGUAGE_CODE	../notes_web_app/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:123
+LOGIN_REDIRECT_URL	../notes_web_app/settings.py	/^LOGIN_REDIRECT_URL = 'notes:all'$/;"	kind:variable	line:142
+LOGOUT_REDIRECT_URL	../notes_web_app/settings.py	/^LOGOUT_REDIRECT_URL = 'accounts:login'$/;"	kind:variable	line:143
+LoginRequiredMixin	../notes/views.py	/^from django.contrib.auth.mixins import LoginRequiredMixin$/;"	kind:namespace	line:4
+MIDDLEWARE	../notes_web_app/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:48
+Meta	../accounts/forms.py	/^    class Meta:$/;"	kind:class	line:6
+Meta	../notes/api/serializers.py	/^    class Meta:$/;"	kind:class	line:8
+Meta	../notes/forms.py	/^    class Meta:$/;"	kind:class	line:6
+Meta	../notes/models.py	/^    class Meta:$/;"	kind:class	line:18
+Meta	../notes/models.py	/^    class Meta:$/;"	kind:class	line:28
+Migration	../accounts/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:11
+Migration	../notes/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
+Migration	../notes/migrations/0002_auto_20180507_0446.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../notes/migrations/0003_auto_20180507_0522.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
+Migration	../notes/migrations/0004_auto_20180507_1034.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../notes/migrations/0005_auto_20180507_1936.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../notes/migrations/0006_auto_20180507_1939.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../notes/migrations/0007_auto_20180507_2000.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+MyModelForm	../notes/forms.py	/^class MyModelForm(forms.ModelForm):$/;"	kind:class	line:4
+Notes	../notes/admin.py	/^from .models import Notes,SharedNotes$/;"	kind:namespace	line:2
+Notes	../notes/api/serializers.py	/^from notes.models import Notes$/;"	kind:namespace	line:2
+Notes	../notes/api/views.py	/^from notes.models import Notes$/;"	kind:namespace	line:3
+Notes	../notes/forms.py	/^from .models import Notes$/;"	kind:namespace	line:2
+Notes	../notes/models.py	/^class Notes(models.Model):$/;"	kind:class	line:6
+Notes	../notes/views.py	/^from .models import Notes,SharedNotes$/;"	kind:namespace	line:2
+NotesConfig	../notes/apps.py	/^class NotesConfig(AppConfig):$/;"	kind:class	line:4
+NotesListView	../notes/api/urls.py	/^from .views import NotesListView$/;"	kind:namespace	line:2
+NotesListView	../notes/api/views.py	/^class NotesListView(generics.ListAPIView,mixins.CreateModelMixin):$/;"	kind:class	line:9
+NotesSerializer	../notes/api/serializers.py	/^class NotesSerializer(serializers.ModelSerializer):$/;"	kind:class	line:6
+NotesSerializer	../notes/api/views.py	/^from .serializers import NotesSerializer$/;"	kind:namespace	line:2
+REST_FRAMEWORK	../notes_web_app/settings.py	/^REST_FRAMEWORK = {$/;"	kind:variable	line:58
+ROOT_URLCONF	../notes_web_app/settings.py	/^ROOT_URLCONF = 'notes_web_app.urls'$/;"	kind:variable	line:69
+SECRET_KEY	../notes_web_app/settings.py	/^SECRET_KEY = 'ywolu9irix8&dkz86d(1=z4(0a4l(r6@goh#d)1@ev65w8k(v9'$/;"	kind:variable	line:25
+STATICFILES_DIRS	../notes_web_app/settings.py	/^STATICFILES_DIRS = [STATIC_DIR,]$/;"	kind:variable	line:138
+STATIC_DIR	../notes_web_app/settings.py	/^STATIC_DIR = os.path.join(BASE_DIR,'static')$/;"	kind:variable	line:18
+STATIC_URL	../notes_web_app/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:137
+SharedByMe	../notes/views.py	/^class SharedByMe(LoginRequiredMixin,generic.ListView):$/;"	kind:class	line:60
+SharedNotes	../notes/admin.py	/^from .models import Notes,SharedNotes$/;"	kind:namespace	line:2
+SharedNotes	../notes/models.py	/^class SharedNotes(models.Model):$/;"	kind:class	line:21
+SharedNotes	../notes/views.py	/^from .models import Notes,SharedNotes$/;"	kind:namespace	line:2
+SharedWithMe	../notes/views.py	/^class SharedWithMe(LoginRequiredMixin,generic.ListView):$/;"	kind:class	line:43
+SignUp	../accounts/views.py	/^class SignUp(generic.CreateView):$/;"	kind:class	line:8
+SuccessfulRegistration	../notes_web_app/views.py	/^class SuccessfulRegistration(generic.TemplateView):$/;"	kind:class	line:6
+TEMPLATES	../notes_web_app/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:71
+TEMPLATES_DIR	../notes_web_app/settings.py	/^TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')$/;"	kind:variable	line:17
+TIME_ZONE	../notes_web_app/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:125
+TestCase	../accounts/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	../notes/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+USE_I18N	../notes_web_app/settings.py	/^USE_I18N = True$/;"	kind:variable	line:127
+USE_L10N	../notes_web_app/settings.py	/^USE_L10N = True$/;"	kind:variable	line:129
+USE_TZ	../notes_web_app/settings.py	/^USE_TZ = True$/;"	kind:variable	line:131
+UpdateNotes	../notes/views.py	/^class UpdateNotes(LoginRequiredMixin,generic.UpdateView):$/;"	kind:class	line:37
+User	../accounts/models.py	/^class User(models.User,models.PermissionsMixin):$/;"	kind:class	line:5
+User	../notes/api/views.py	/^User = get_user_model()$/;"	kind:variable	line:7
+User	../notes/models.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:2
+User	../notes/views.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:9
+UserCreateForm	../accounts/forms.py	/^class UserCreateForm(UserCreationForm):$/;"	kind:class	line:4
+UserCreationForm	../accounts/forms.py	/^from django.contrib.auth.forms import UserCreationForm$/;"	kind:namespace	line:2
+ViewNotes	../notes/views.py	/^class ViewNotes(LoginRequiredMixin,generic.ListView):$/;"	kind:class	line:28
+WSGI_APPLICATION	../notes_web_app/settings.py	/^WSGI_APPLICATION = 'notes_web_app.wsgi.application'$/;"	kind:variable	line:87
+Welcome	../notes_web_app/views.py	/^class Welcome(generic.TemplateView):$/;"	kind:class	line:3
+__init__	../accounts/forms.py	/^    def __init__(self,*args,**kwargs):$/;"	kind:member	line:11
+__init__.py	../accounts/__init__.py	1;"	kind:file	line:1
+__init__.py	../accounts/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../notes/__init__.py	1;"	kind:file	line:1
+__init__.py	../notes/api/__init__.py	1;"	kind:file	line:1
+__init__.py	../notes/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../notes_web_app/__init__.py	1;"	kind:file	line:1
+__str__	../accounts/models.py	/^    def __str__(self):$/;"	kind:member	line:7
+__str__	../notes/models.py	/^    def __str__(self):$/;"	kind:member	line:12
+__str__	../notes/models.py	/^    def __str__(self):$/;"	kind:member	line:31
+admin	../accounts/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../notes/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../notes_web_app/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin.py	../accounts/admin.py	1;"	kind:file	line:1
+admin.py	../notes/admin.py	1;"	kind:file	line:1
+app_name	../accounts/urls.py	/^app_name = 'accounts'$/;"	kind:variable	line:5
+app_name	../notes/urls.py	/^app_name = 'notes'$/;"	kind:variable	line:4
+application	../notes_web_app/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../accounts/apps.py	1;"	kind:file	line:1
+apps.py	../notes/apps.py	1;"	kind:file	line:1
+auth	../accounts/migrations/0001_initial.py	/^import django.contrib.auth.models$/;"	kind:namespace	line:6
+authviews	../accounts/urls.py	/^from django.contrib.auth import views as authviews$/;"	kind:namespace	line:3
+authviews	../notes_web_app/urls.py	/^from django.contrib.auth import views as authviews$/;"	kind:namespace	line:18
+bases	../accounts/migrations/0001_initial.py	/^            bases=('auth.user', models.Model),$/;"	kind:variable	line:30
+can_edit	../notes/models.py	/^    can_edit = models.BooleanField(default=False)$/;"	kind:variable	line:26
+contrib	../accounts/migrations/0001_initial.py	/^import django.contrib.auth.models$/;"	kind:namespace	line:6
+created	../notes/models.py	/^    created = models.DateTimeField(auto_now=True)$/;"	kind:variable	line:8
+db	../accounts/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
+db	../notes/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+db	../notes/migrations/0003_auto_20180507_0522.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+deletion	../accounts/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
+deletion	../notes/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+deletion	../notes/migrations/0003_auto_20180507_0522.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+dependencies	../accounts/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:15
+dependencies	../notes/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:14
+dependencies	../notes/migrations/0002_auto_20180507_0446.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../notes/migrations/0003_auto_20180507_0522.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../notes/migrations/0004_auto_20180507_1034.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../notes/migrations/0005_auto_20180507_1936.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../notes/migrations/0006_auto_20180507_1939.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../notes/migrations/0007_auto_20180507_2000.py	/^    dependencies = [$/;"	kind:variable	line:10
+django	../accounts/migrations/0001_initial.py	/^import django.contrib.auth.models$/;"	kind:namespace	line:6
+django	../accounts/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
+django	../manage.py	/^            import django$/;"	kind:namespace	line:14
+django	../notes/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+django	../notes/migrations/0003_auto_20180507_0522.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+execute_from_command_line	../manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+field	../notes/migrations/0002_auto_20180507_0446.py	/^            field=models.TextField(max_length=2000),$/;"	kind:variable	line:18
+field	../notes/migrations/0004_auto_20180507_1034.py	/^            field=models.BooleanField(default=False),$/;"	kind:variable	line:18
+field	../notes/migrations/0004_auto_20180507_1034.py	/^            field=models.CharField(max_length=30, null=True),$/;"	kind:variable	line:23
+field	../notes/migrations/0004_auto_20180507_1034.py	/^            field=models.DateTimeField(auto_now=True),$/;"	kind:variable	line:28
+field	../notes/migrations/0005_auto_20180507_1936.py	/^            field=models.CharField(max_length=2000),$/;"	kind:variable	line:18
+field	../notes/migrations/0006_auto_20180507_1939.py	/^            field=models.TextField(max_length=2000),$/;"	kind:variable	line:18
+field	../notes/migrations/0007_auto_20180507_2000.py	/^            field=models.CharField(max_length=2000),$/;"	kind:variable	line:18
+fields	../accounts/forms.py	/^        fields = ('username','email','password1','password2')$/;"	kind:variable	line:8
+fields	../accounts/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:22
+fields	../notes/api/serializers.py	/^        fields = ['title','text','created','user']$/;"	kind:variable	line:9
+fields	../notes/forms.py	/^        fields = ('title','text')$/;"	kind:variable	line:8
+fields	../notes/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:21
+fields	../notes/migrations/0003_auto_20180507_0522.py	/^            fields=[$/;"	kind:variable	line:20
+form_class	../accounts/views.py	/^    form_class = forms.UserCreateForm$/;"	kind:variable	line:9
+form_class	../notes/views.py	/^    form_class = forms.MyModelForm$/;"	kind:variable	line:20
+form_class	../notes/views.py	/^    form_class = forms.MyModelForm$/;"	kind:variable	line:39
+form_valid	../notes/views.py	/^    def form_valid(self, form):$/;"	kind:member	line:22
+forms	../accounts/views.py	/^from . import forms$/;"	kind:namespace	line:3
+forms	../notes/forms.py	/^from django import forms$/;"	kind:namespace	line:1
+forms	../notes/views.py	/^from . import forms$/;"	kind:namespace	line:12
+forms.py	../accounts/forms.py	1;"	kind:file	line:1
+forms.py	../notes/forms.py	1;"	kind:file	line:1
+generic	../accounts/views.py	/^from django.views import generic$/;"	kind:namespace	line:4
+generic	../notes/views.py	/^from django.views import generic$/;"	kind:namespace	line:3
+generic	../notes_web_app/views.py	/^from django.views import generic$/;"	kind:namespace	line:1
+generics	../notes/api/views.py	/^from rest_framework import generics$/;"	kind:namespace	line:1
+get_absolute_url	../notes/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:15
+get_absolute_url	../notes/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:34
+get_context_data	../notes/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:55
+get_context_data	../notes/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:73
+get_queryset	../notes/api/views.py	/^    def get_queryset(self):$/;"	kind:member	line:12
+get_queryset	../notes/views.py	/^    def get_queryset(self):$/;"	kind:member	line:46
+get_queryset	../notes/views.py	/^    def get_queryset(self):$/;"	kind:member	line:64
+get_user_model	../accounts/forms.py	/^from django.contrib.auth import get_user_model$/;"	kind:namespace	line:1
+get_user_model	../notes/api/views.py	/^from django.contrib.auth import get_user_model$/;"	kind:namespace	line:4
+get_user_model	../notes/views.py	/^from django.contrib.auth import get_user_model$/;"	kind:namespace	line:6
+get_wsgi_application	../notes_web_app/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+include	../notes_web_app/urls.py	/^from django.conf.urls import url,include$/;"	kind:namespace	line:16
+initial	../accounts/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:13
+initial	../notes/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:12
+kwargs	../accounts/urls.py	/^    	kwargs={'template_name':'registration\/password_reset_form.html'}),$/;"	kind:variable	line:12
+login_required	../notes/views.py	/^from django.contrib.auth.decorators import login_required$/;"	kind:namespace	line:5
+manage.py	../manage.py	1;"	kind:file	line:1
+managers	../accounts/migrations/0001_initial.py	/^            managers=[$/;"	kind:variable	line:31
+messages	../notes/views.py	/^from django.contrib import messages$/;"	kind:namespace	line:10
+migrations	../accounts/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:7
+migrations	../notes/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+migrations	../notes/migrations/0002_auto_20180507_0446.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../notes/migrations/0003_auto_20180507_0522.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+migrations	../notes/migrations/0004_auto_20180507_1034.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../notes/migrations/0005_auto_20180507_1936.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../notes/migrations/0006_auto_20180507_1939.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../notes/migrations/0007_auto_20180507_2000.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+mixins	../notes/api/views.py	/^from rest_framework import mixins$/;"	kind:namespace	line:5
+model	../accounts/forms.py	/^        model = get_user_model()$/;"	kind:variable	line:9
+model	../notes/api/serializers.py	/^        model = Notes$/;"	kind:variable	line:10
+model	../notes/api/views.py	/^    model = Notes$/;"	kind:variable	line:11
+model	../notes/forms.py	/^        model = Notes$/;"	kind:variable	line:7
+model	../notes/views.py	/^    model = Notes$/;"	kind:variable	line:19
+model	../notes/views.py	/^    model = Notes$/;"	kind:variable	line:29
+model	../notes/views.py	/^    model = Notes$/;"	kind:variable	line:33
+model	../notes/views.py	/^    model = Notes$/;"	kind:variable	line:38
+model	../notes/views.py	/^    model = SharedNotes$/;"	kind:variable	line:44
+model	../notes/views.py	/^    model = SharedNotes$/;"	kind:variable	line:61
+model_name	../notes/migrations/0002_auto_20180507_0446.py	/^            model_name='notes',$/;"	kind:variable	line:16
+model_name	../notes/migrations/0004_auto_20180507_1034.py	/^            model_name='sharednotes',$/;"	kind:variable	line:16
+model_name	../notes/migrations/0004_auto_20180507_1034.py	/^            model_name='sharednotes',$/;"	kind:variable	line:21
+model_name	../notes/migrations/0004_auto_20180507_1034.py	/^            model_name='sharednotes',$/;"	kind:variable	line:26
+model_name	../notes/migrations/0005_auto_20180507_1936.py	/^            model_name='notes',$/;"	kind:variable	line:16
+model_name	../notes/migrations/0006_auto_20180507_1939.py	/^            model_name='notes',$/;"	kind:variable	line:16
+model_name	../notes/migrations/0007_auto_20180507_2000.py	/^            model_name='notes',$/;"	kind:variable	line:16
+models	../accounts/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:7
+models	../accounts/migrations/0001_initial.py	/^import django.contrib.auth.models$/;"	kind:namespace	line:6
+models	../accounts/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
+models	../accounts/models.py	/^from django.contrib.auth import models$/;"	kind:namespace	line:2
+models	../accounts/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	../notes/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+models	../notes/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+models	../notes/migrations/0002_auto_20180507_0446.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../notes/migrations/0003_auto_20180507_0522.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+models	../notes/migrations/0003_auto_20180507_0522.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+models	../notes/migrations/0004_auto_20180507_1034.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../notes/migrations/0005_auto_20180507_1936.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../notes/migrations/0006_auto_20180507_1939.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../notes/migrations/0007_auto_20180507_2000.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../notes/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models.py	../accounts/models.py	1;"	kind:file	line:1
+models.py	../notes/models.py	1;"	kind:file	line:1
+name	../accounts/apps.py	/^    name = 'accounts'$/;"	kind:variable	line:5
+name	../accounts/migrations/0001_initial.py	/^            name='User',$/;"	kind:variable	line:21
+name	../notes/apps.py	/^    name = 'notes'$/;"	kind:variable	line:5
+name	../notes/migrations/0001_initial.py	/^            name='Notes',$/;"	kind:variable	line:20
+name	../notes/migrations/0002_auto_20180507_0446.py	/^            name='text',$/;"	kind:variable	line:17
+name	../notes/migrations/0003_auto_20180507_0522.py	/^            name='SharedNotes',$/;"	kind:variable	line:19
+name	../notes/migrations/0003_auto_20180507_0522.py	/^            name='sharednotes',$/;"	kind:variable	line:27
+name	../notes/migrations/0004_auto_20180507_1034.py	/^            name='can_edit',$/;"	kind:variable	line:17
+name	../notes/migrations/0004_auto_20180507_1034.py	/^            name='shared_by',$/;"	kind:variable	line:22
+name	../notes/migrations/0004_auto_20180507_1034.py	/^            name='shared_on',$/;"	kind:variable	line:27
+name	../notes/migrations/0005_auto_20180507_1936.py	/^            name='text',$/;"	kind:variable	line:17
+name	../notes/migrations/0006_auto_20180507_1939.py	/^            name='text',$/;"	kind:variable	line:17
+name	../notes/migrations/0007_auto_20180507_2000.py	/^            name='text',$/;"	kind:variable	line:17
+note	../notes/models.py	/^    note = models.ForeignKey(Notes,related_name='shared_note')$/;"	kind:variable	line:22
+operations	../accounts/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:19
+operations	../notes/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:18
+operations	../notes/migrations/0002_auto_20180507_0446.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../notes/migrations/0003_auto_20180507_0522.py	/^    operations = [$/;"	kind:variable	line:17
+operations	../notes/migrations/0004_auto_20180507_1034.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../notes/migrations/0005_auto_20180507_1936.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../notes/migrations/0006_auto_20180507_1939.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../notes/migrations/0007_auto_20180507_2000.py	/^    operations = [$/;"	kind:variable	line:14
+options	../accounts/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:25
+options	../notes/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:28
+ordering	../notes/models.py	/^        ordering = ['-created']$/;"	kind:variable	line:19
+os	../manage.py	/^import os$/;"	kind:namespace	line:2
+os	../notes_web_app/settings.py	/^import os$/;"	kind:namespace	line:13
+os	../notes_web_app/wsgi.py	/^import os$/;"	kind:namespace	line:10
+perform_create	../notes/api/views.py	/^    def perform_create(self, serializer):$/;"	kind:member	line:19
+post	../notes/api/views.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:16
+read_only_fields	../notes/api/serializers.py	/^        read_only_fields = ['user']$/;"	kind:variable	line:11
+render	../accounts/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+render	../notes/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+reverse	../notes/models.py	/^from django.core.urlresolvers import reverse$/;"	kind:namespace	line:3
+reverse	../notes/views.py	/^from django.core.urlresolvers import reverse,reverse_lazy$/;"	kind:namespace	line:7
+reverse_lazy	../accounts/views.py	/^from django.core.urlresolvers import reverse_lazy$/;"	kind:namespace	line:2
+reverse_lazy	../notes/views.py	/^from django.core.urlresolvers import reverse,reverse_lazy$/;"	kind:namespace	line:7
+serializer_class	../notes/api/views.py	/^    serializer_class = NotesSerializer$/;"	kind:variable	line:10
+serializers	../notes/api/serializers.py	/^from rest_framework import serializers$/;"	kind:namespace	line:1
+serializers.py	../notes/api/serializers.py	1;"	kind:file	line:1
+settings	../accounts/migrations/0001_initial.py	/^from django.conf import settings$/;"	kind:namespace	line:5
+settings	../notes/migrations/0001_initial.py	/^from django.conf import settings$/;"	kind:namespace	line:5
+settings	../notes/migrations/0003_auto_20180507_0522.py	/^from django.conf import settings$/;"	kind:namespace	line:5
+settings.py	../notes_web_app/settings.py	1;"	kind:file	line:1
+shared_by	../notes/models.py	/^    shared_by = models.CharField(max_length=30,null=True)$/;"	kind:variable	line:24
+shared_on	../notes/models.py	/^    shared_on = models.DateTimeField(auto_now=True)$/;"	kind:variable	line:25
+sharenotes	../notes/views.py	/^def sharenotes(request): #To choose among available notes$/;"	kind:function	line:79
+sharesingle	../notes/views.py	/^def sharesingle(request,pk=None): #if you want to share a single note$/;"	kind:function	line:98
+success_url	../accounts/views.py	/^    success_url = reverse_lazy('success')$/;"	kind:variable	line:10
+success_url	../notes/views.py	/^    success_url = reverse_lazy('notes:all')$/;"	kind:variable	line:34
+success_url	../notes/views.py	/^    success_url = reverse_lazy('notes:all')$/;"	kind:variable	line:41
+sys	../manage.py	/^import sys$/;"	kind:namespace	line:3
+template_name	../accounts/views.py	/^    template_name = 'accounts\/signup_temp.html'$/;"	kind:variable	line:11
+template_name	../notes/views.py	/^    template_name = 'notes\/notes_update_form.html'$/;"	kind:variable	line:40
+template_name	../notes/views.py	/^    template_name = 'notes\/sharedbyme_list.html'$/;"	kind:variable	line:62
+template_name	../notes_web_app/views.py	/^    template_name = 'success.html'/;"	kind:variable	line:7
+template_name	../notes_web_app/views.py	/^    template_name = 'welcome.html'$/;"	kind:variable	line:4
+tests.py	../accounts/tests.py	1;"	kind:file	line:1
+tests.py	../notes/tests.py	1;"	kind:file	line:1
+text	../notes/models.py	/^    text = models.CharField(max_length=2000)$/;"	kind:variable	line:9
+title	../notes/models.py	/^    title = models.CharField(max_length=30)$/;"	kind:variable	line:7
+unicode_literals	../accounts/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../notes/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../notes/migrations/0002_auto_20180507_0446.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../notes/migrations/0003_auto_20180507_0522.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../notes/migrations/0004_auto_20180507_1034.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../notes/migrations/0005_auto_20180507_1936.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../notes/migrations/0006_auto_20180507_1939.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../notes/migrations/0007_auto_20180507_2000.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unique_together	../notes/migrations/0003_auto_20180507_0522.py	/^            unique_together=set([('note', 'user')]),$/;"	kind:variable	line:28
+unique_together	../notes/models.py	/^        unique_together = ('note','user')$/;"	kind:variable	line:29
+url	../accounts/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
+url	../notes/api/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
+url	../notes/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
+url	../notes_web_app/urls.py	/^from django.conf.urls import url,include$/;"	kind:namespace	line:16
+urlpatterns	../accounts/urls.py	/^urlpatterns = [$/;"	kind:variable	line:7
+urlpatterns	../notes/api/urls.py	/^urlpatterns = [$/;"	kind:variable	line:4
+urlpatterns	../notes/urls.py	/^urlpatterns = [$/;"	kind:variable	line:6
+urlpatterns	../notes_web_app/urls.py	/^urlpatterns = [$/;"	kind:variable	line:21
+urls.py	../accounts/urls.py	1;"	kind:file	line:1
+urls.py	../notes/api/urls.py	1;"	kind:file	line:1
+urls.py	../notes/urls.py	1;"	kind:file	line:1
+urls.py	../notes_web_app/urls.py	1;"	kind:file	line:1
+user	../notes/models.py	/^    user = models.ForeignKey(User,related_name='notes')$/;"	kind:variable	line:10
+user	../notes/models.py	/^    user = models.ForeignKey(User,related_name='shared_user')$/;"	kind:variable	line:23
+views	../accounts/urls.py	/^from . import views$/;"	kind:namespace	line:2
+views	../notes/urls.py	/^from . import views$/;"	kind:namespace	line:2
+views	../notes_web_app/urls.py	/^from . import views$/;"	kind:namespace	line:19
+views.py	../accounts/views.py	1;"	kind:file	line:1
+views.py	../notes/api/views.py	1;"	kind:file	line:1
+views.py	../notes/views.py	1;"	kind:file	line:1
+views.py	../notes_web_app/views.py	1;"	kind:file	line:1
+widgets	../notes/forms.py	/^        widgets = {$/;"	kind:variable	line:10
+wsgi.py	../notes_web_app/wsgi.py	1;"	kind:file	line:1

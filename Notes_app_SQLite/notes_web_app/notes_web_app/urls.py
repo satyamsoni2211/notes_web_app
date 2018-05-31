@@ -16,13 +16,16 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from django.contrib.auth import views as authviews
+from django.views.generic import TemplateView
 from . import views
 
 urlpatterns = [
     url(r'^$',authviews.LoginView.as_view(template_name='accounts/login_temp.html'),name='homepage'),
+    url(r'^react/$',TemplateView.as_view(template_name='React/index.html'),name='react'),    
     url(r'^success/$',views.SuccessfulRegistration.as_view(),name='success'),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/',include('accounts.urls')),
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^notes/',include('notes.urls')),
+    url(r'^api/',include('notes.api.urls',namespace='notesapi')),
 ]

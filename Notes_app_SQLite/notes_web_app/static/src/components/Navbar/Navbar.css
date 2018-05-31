@@ -1,0 +1,23 @@
+/* .navbar-nav span[role=button] {
+    padding: 15px;
+    display: inline-block;
+    line-height: 20px;
+  } */
+ul {
+    list-style-type: none;
+    box-shadow: 0px 2px #d4d7db;
+}
+li {
+    display: inline-block;
+    padding: 15px 30px;
+    border-right: 2px;
+    text-decoration: none;
+    color: #777;
+}
+li:hover {
+    background-color: grey;
+    color: white;
+}
+a {
+    color : #777;
+}
