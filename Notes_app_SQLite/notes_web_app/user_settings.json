@@ -1,0 +1,22 @@
+{
+    "python.venvPath": "~/Documents/",
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+   ],
+   "files.exclude": {
+    "**/*.pyc": true,
+    ".idea/":true,
+    "*/node_modules/":true,
+    ".vscode/": true
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.shell.linux": "/bin/zsh"
+}
